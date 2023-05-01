@@ -1,0 +1,43 @@
+# Mac OS specific files/directories
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+
+# Xcode specific files/directories
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace
+xcuserdata
+project.xcworkspace
+project.xcworkspacedata
+
+# Swift Package Manager specific files/directories
+.build/
+
+# Cocoapods specific files/directories
+Pods/
+*.lock
+*.xcconfig
+
+# Carthage specific files/directories
+Carthage/
+Cartfile.resolved
+
+# Fastlane specific files/directories
+fastlane/report.xml
+fastlane/screenshots/
+
+# Other
+.vscode/
+.idea/
+node_modules/
+yarn.lock
+*.log
+*.swp
+Thumbs.db
+Desktop.ini
