@@ -1,0 +1,97 @@
+{
+  "id": "example_flow_id",
+  "name": "Example Flow",
+  "artifacts": [
+    {
+      "fileName": "bread",
+      "contentType": "text",
+      "description": "The type of bread for the sandwich"
+    },
+    {
+      "fileName": "peanut butter",
+      "contentType": "text",
+      "description": "The type of peanut butter for the sandwich"
+    },
+    {
+      "fileName": "jelly",
+      "contentType": "text",
+      "description": "The type of jelly for the sandwich"
+    },
+    {
+      "fileName": "jelly",
+      "contentType": "text",
+      "description": "The resulting sandwich"
+    },
+    {
+      "fileName": "number",
+      "contentType": "number",
+      "description": "Example of a number artifact"
+    },
+    {
+      "fileName": "number",
+      "contentType": "url",
+      "description": "Example of a url artifact"
+    },
+    {
+      "fileName": "bool",
+      "contentType": "bool",
+      "description": "Example of a boolean artifact"
+    }
+  ],
+  "steps": [
+    {
+      "id": "gather_ingredients_id",
+      "dependencyFileNames": [],
+      "name": "Gather Ingredients",
+      "actions": [
+        {
+          "collect": {
+            "action": {
+              "name": "Get Bread",
+              "outputArtifactFileName": "bread"
+            }
+          }
+        },
+        {
+          "collect": {
+            "action": {
+              "name": "Get Peanut Butter",
+              "outputArtifactFileName": "peanut butter"
+            }
+          }
+        },
+        {
+          "collect": {
+            "action": {
+              "name": "Get Jelly",
+              "outputArtifactFileName": "jelly"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "assemble_sandwich_id",
+      "dependencyFileNames": [
+        "bread",
+        "peanut butter",
+        "jelly"
+      ],
+      "name": "Assemble Sandwich",
+      "actions": [
+        {
+          "execute": {
+            "action": {
+              "arguments": [
+                "some_argument"
+              ],
+              "name": "Assemble",
+              "executablePath": "~/assemble.sh",
+              "outputArtifactFileName": "sandwich"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

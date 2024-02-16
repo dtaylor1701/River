@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63F937782AE746BA0075BAC0 /* RiverEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F937772AE746BA0075BAC0 /* RiverEditorApp.swift */; };
+		63F9377A2AE746BA0075BAC0 /* RiverEditorDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F937792AE746BA0075BAC0 /* RiverEditorDocument.swift */; };
+		63F9377C2AE746BA0075BAC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9377B2AE746BA0075BAC0 /* ContentView.swift */; };
+		63F9377E2AE746BB0075BAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F9377D2AE746BB0075BAC0 /* Assets.xcassets */; };
+		63F937812AE746BB0075BAC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F937802AE746BB0075BAC0 /* Preview Assets.xcassets */; };
+		63F9378D2AE746BB0075BAC0 /* RiverEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9378C2AE746BB0075BAC0 /* RiverEditorTests.swift */; };
+		63F937972AE746BB0075BAC0 /* RiverEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F937962AE746BB0075BAC0 /* RiverEditorUITests.swift */; };
+		63F937992AE746BB0075BAC0 /* RiverEditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F937982AE746BB0075BAC0 /* RiverEditorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63F937892AE746BB0075BAC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63F9376C2AE746BA0075BAC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63F937732AE746BA0075BAC0;
+			remoteInfo = RiverEditor;
+		};
+		63F937932AE746BB0075BAC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63F9376C2AE746BA0075BAC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63F937732AE746BA0075BAC0;
+			remoteInfo = RiverEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63F937742AE746BA0075BAC0 /* RiverEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiverEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F937772AE746BA0075BAC0 /* RiverEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverEditorApp.swift; sourceTree = "<group>"; };
+		63F937792AE746BA0075BAC0 /* RiverEditorDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverEditorDocument.swift; sourceTree = "<group>"; };
+		63F9377B2AE746BA0075BAC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63F9377D2AE746BB0075BAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63F937802AE746BB0075BAC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63F937822AE746BB0075BAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F937832AE746BB0075BAC0 /* RiverEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RiverEditor.entitlements; sourceTree = "<group>"; };
+		63F937882AE746BB0075BAC0 /* RiverEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiverEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F9378C2AE746BB0075BAC0 /* RiverEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverEditorTests.swift; sourceTree = "<group>"; };
+		63F937922AE746BB0075BAC0 /* RiverEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiverEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F937962AE746BB0075BAC0 /* RiverEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverEditorUITests.swift; sourceTree = "<group>"; };
+		63F937982AE746BB0075BAC0 /* RiverEditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverEditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63F937712AE746BA0075BAC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F937852AE746BB0075BAC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F9378F2AE746BB0075BAC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63F9376B2AE746BA0075BAC0 = {
+			isa = PBXGroup;
+			children = (
+				63F937762AE746BA0075BAC0 /* RiverEditor */,
+				63F9378B2AE746BB0075BAC0 /* RiverEditorTests */,
+				63F937952AE746BB0075BAC0 /* RiverEditorUITests */,
+				63F937752AE746BA0075BAC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63F937752AE746BA0075BAC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63F937742AE746BA0075BAC0 /* RiverEditor.app */,
+				63F937882AE746BB0075BAC0 /* RiverEditorTests.xctest */,
+				63F937922AE746BB0075BAC0 /* RiverEditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63F937762AE746BA0075BAC0 /* RiverEditor */ = {
+			isa = PBXGroup;
+			children = (
+				63F937772AE746BA0075BAC0 /* RiverEditorApp.swift */,
+				63F937792AE746BA0075BAC0 /* RiverEditorDocument.swift */,
+				63F9377B2AE746BA0075BAC0 /* ContentView.swift */,
+				63F9377D2AE746BB0075BAC0 /* Assets.xcassets */,
+				63F937822AE746BB0075BAC0 /* Info.plist */,
+				63F937832AE746BB0075BAC0 /* RiverEditor.entitlements */,
+				63F9377F2AE746BB0075BAC0 /* Preview Content */,
+			);
+			path = RiverEditor;
+			sourceTree = "<group>";
+		};
+		63F9377F2AE746BB0075BAC0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				63F937802AE746BB0075BAC0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63F9378B2AE746BB0075BAC0 /* RiverEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				63F9378C2AE746BB0075BAC0 /* RiverEditorTests.swift */,
+			);
+			path = RiverEditorTests;
+			sourceTree = "<group>";
+		};
+		63F937952AE746BB0075BAC0 /* RiverEditorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63F937962AE746BB0075BAC0 /* RiverEditorUITests.swift */,
+				63F937982AE746BB0075BAC0 /* RiverEditorUITestsLaunchTests.swift */,
+			);
+			path = RiverEditorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63F937732AE746BA0075BAC0 /* RiverEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F9379C2AE746BB0075BAC0 /* Build configuration list for PBXNativeTarget "RiverEditor" */;
+			buildPhases = (
+				63F937702AE746BA0075BAC0 /* Sources */,
+				63F937712AE746BA0075BAC0 /* Frameworks */,
+				63F937722AE746BA0075BAC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RiverEditor;
+			productName = RiverEditor;
+			productReference = 63F937742AE746BA0075BAC0 /* RiverEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63F937872AE746BB0075BAC0 /* RiverEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F9379F2AE746BB0075BAC0 /* Build configuration list for PBXNativeTarget "RiverEditorTests" */;
+			buildPhases = (
+				63F937842AE746BB0075BAC0 /* Sources */,
+				63F937852AE746BB0075BAC0 /* Frameworks */,
+				63F937862AE746BB0075BAC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63F9378A2AE746BB0075BAC0 /* PBXTargetDependency */,
+			);
+			name = RiverEditorTests;
+			productName = RiverEditorTests;
+			productReference = 63F937882AE746BB0075BAC0 /* RiverEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63F937912AE746BB0075BAC0 /* RiverEditorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F937A22AE746BB0075BAC0 /* Build configuration list for PBXNativeTarget "RiverEditorUITests" */;
+			buildPhases = (
+				63F9378E2AE746BB0075BAC0 /* Sources */,
+				63F9378F2AE746BB0075BAC0 /* Frameworks */,
+				63F937902AE746BB0075BAC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63F937942AE746BB0075BAC0 /* PBXTargetDependency */,
+			);
+			name = RiverEditorUITests;
+			productName = RiverEditorUITests;
+			productReference = 63F937922AE746BB0075BAC0 /* RiverEditorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63F9376C2AE746BA0075BAC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					63F937732AE746BA0075BAC0 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					63F937872AE746BB0075BAC0 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 63F937732AE746BA0075BAC0;
+					};
+					63F937912AE746BB0075BAC0 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 63F937732AE746BA0075BAC0;
+					};
+				};
+			};
+			buildConfigurationList = 63F9376F2AE746BA0075BAC0 /* Build configuration list for PBXProject "RiverEditor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63F9376B2AE746BA0075BAC0;
+			productRefGroup = 63F937752AE746BA0075BAC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63F937732AE746BA0075BAC0 /* RiverEditor */,
+				63F937872AE746BB0075BAC0 /* RiverEditorTests */,
+				63F937912AE746BB0075BAC0 /* RiverEditorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63F937722AE746BA0075BAC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F937812AE746BB0075BAC0 /* Preview Assets.xcassets in Resources */,
+				63F9377E2AE746BB0075BAC0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F937862AE746BB0075BAC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F937902AE746BB0075BAC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63F937702AE746BA0075BAC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F9377A2AE746BA0075BAC0 /* RiverEditorDocument.swift in Sources */,
+				63F937782AE746BA0075BAC0 /* RiverEditorApp.swift in Sources */,
+				63F9377C2AE746BA0075BAC0 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F937842AE746BB0075BAC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F9378D2AE746BB0075BAC0 /* RiverEditorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F9378E2AE746BB0075BAC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F937992AE746BB0075BAC0 /* RiverEditorUITestsLaunchTests.swift in Sources */,
+				63F937972AE746BB0075BAC0 /* RiverEditorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63F9378A2AE746BB0075BAC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63F937732AE746BA0075BAC0 /* RiverEditor */;
+			targetProxy = 63F937892AE746BB0075BAC0 /* PBXContainerItemProxy */;
+		};
+		63F937942AE746BB0075BAC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63F937732AE746BA0075BAC0 /* RiverEditor */;
+			targetProxy = 63F937932AE746BB0075BAC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		63F9379A2AE746BB0075BAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63F9379B2AE746BB0075BAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		63F9379D2AE746BB0075BAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RiverEditor/RiverEditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RiverEditor/Preview Content\"";
+				DEVELOPMENT_TEAM = J7826XAREP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RiverEditor/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperElephant.RiverEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		63F9379E2AE746BB0075BAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RiverEditor/RiverEditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RiverEditor/Preview Content\"";
+				DEVELOPMENT_TEAM = J7826XAREP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RiverEditor/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperElephant.RiverEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		63F937A02AE746BB0075BAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J7826XAREP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperElephant.RiverEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiverEditor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RiverEditor";
+			};
+			name = Debug;
+		};
+		63F937A12AE746BB0075BAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J7826XAREP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperElephant.RiverEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiverEditor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RiverEditor";
+			};
+			name = Release;
+		};
+		63F937A32AE746BB0075BAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J7826XAREP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperElephant.RiverEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RiverEditor;
+			};
+			name = Debug;
+		};
+		63F937A42AE746BB0075BAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J7826XAREP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperElephant.RiverEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RiverEditor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63F9376F2AE746BA0075BAC0 /* Build configuration list for PBXProject "RiverEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F9379A2AE746BB0075BAC0 /* Debug */,
+				63F9379B2AE746BB0075BAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F9379C2AE746BB0075BAC0 /* Build configuration list for PBXNativeTarget "RiverEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F9379D2AE746BB0075BAC0 /* Debug */,
+				63F9379E2AE746BB0075BAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F9379F2AE746BB0075BAC0 /* Build configuration list for PBXNativeTarget "RiverEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F937A02AE746BB0075BAC0 /* Debug */,
+				63F937A12AE746BB0075BAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F937A22AE746BB0075BAC0 /* Build configuration list for PBXNativeTarget "RiverEditorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F937A32AE746BB0075BAC0 /* Debug */,
+				63F937A42AE746BB0075BAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63F9376C2AE746BA0075BAC0 /* Project object */;
+}
