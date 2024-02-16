@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63245FEB2B0EE51D00717E08 /* EditArtifactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63245FEA2B0EE51D00717E08 /* EditArtifactView.swift */; };
+		63245FED2B0EE81000717E08 /* ArtifactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63245FEC2B0EE81000717E08 /* ArtifactsView.swift */; };
+		63245FEF2B0EE89800717E08 /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63245FEE2B0EE89800717E08 /* StepsView.swift */; };
+		63720E6B2B7F20AC00E74FA6 /* ModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E6A2B7F20AC00E74FA6 /* ModelExtensions.swift */; };
 		63F937782AE746BA0075BAC0 /* RiverEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F937772AE746BA0075BAC0 /* RiverEditorApp.swift */; };
 		63F9377A2AE746BA0075BAC0 /* RiverEditorDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F937792AE746BA0075BAC0 /* RiverEditorDocument.swift */; };
 		63F9377C2AE746BA0075BAC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9377B2AE746BA0075BAC0 /* ContentView.swift */; };
@@ -15,6 +19,7 @@
 		63F9378D2AE746BB0075BAC0 /* RiverEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9378C2AE746BB0075BAC0 /* RiverEditorTests.swift */; };
 		63F937972AE746BB0075BAC0 /* RiverEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F937962AE746BB0075BAC0 /* RiverEditorUITests.swift */; };
 		63F937992AE746BB0075BAC0 /* RiverEditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F937982AE746BB0075BAC0 /* RiverEditorUITestsLaunchTests.swift */; };
+		63F937A72AE746F00075BAC0 /* RiverKit in Frameworks */ = {isa = PBXBuildFile; productRef = 63F937A62AE746F00075BAC0 /* RiverKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63245FEA2B0EE51D00717E08 /* EditArtifactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditArtifactView.swift; sourceTree = "<group>"; };
+		63245FEC2B0EE81000717E08 /* ArtifactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsView.swift; sourceTree = "<group>"; };
+		63245FEE2B0EE89800717E08 /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		63720E6A2B7F20AC00E74FA6 /* ModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExtensions.swift; sourceTree = "<group>"; };
 		63F937742AE746BA0075BAC0 /* RiverEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiverEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F937772AE746BA0075BAC0 /* RiverEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverEditorApp.swift; sourceTree = "<group>"; };
 		63F937792AE746BA0075BAC0 /* RiverEditorDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverEditorDocument.swift; sourceTree = "<group>"; };
@@ -55,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F937A72AE746F00075BAC0 /* RiverKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +85,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63245FE92B0EE4DA00717E08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63245FEA2B0EE51D00717E08 /* EditArtifactView.swift */,
+				63245FEC2B0EE81000717E08 /* ArtifactsView.swift */,
+				63245FEE2B0EE89800717E08 /* StepsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		63F9376B2AE746BA0075BAC0 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +118,7 @@
 		63F937762AE746BA0075BAC0 /* RiverEditor */ = {
 			isa = PBXGroup;
 			children = (
+				63245FE92B0EE4DA00717E08 /* Views */,
 				63F937772AE746BA0075BAC0 /* RiverEditorApp.swift */,
 				63F937792AE746BA0075BAC0 /* RiverEditorDocument.swift */,
 				63F9377B2AE746BA0075BAC0 /* ContentView.swift */,
@@ -105,6 +126,7 @@
 				63F937822AE746BB0075BAC0 /* Info.plist */,
 				63F937832AE746BB0075BAC0 /* RiverEditor.entitlements */,
 				63F9377F2AE746BB0075BAC0 /* Preview Content */,
+				63720E6A2B7F20AC00E74FA6 /* ModelExtensions.swift */,
 			);
 			path = RiverEditor;
 			sourceTree = "<group>";
@@ -150,6 +172,9 @@
 			dependencies = (
 			);
 			name = RiverEditor;
+			packageProductDependencies = (
+				63F937A62AE746F00075BAC0 /* RiverKit */,
+			);
 			productName = RiverEditor;
 			productReference = 63F937742AE746BA0075BAC0 /* RiverEditor.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 63F9376B2AE746BA0075BAC0;
+			packageReferences = (
+				63F937A52AE746F00075BAC0 /* XCLocalSwiftPackageReference "../River" */,
+			);
 			productRefGroup = 63F937752AE746BA0075BAC0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,7 +294,11 @@
 			files = (
 				63F9377A2AE746BA0075BAC0 /* RiverEditorDocument.swift in Sources */,
 				63F937782AE746BA0075BAC0 /* RiverEditorApp.swift in Sources */,
+				63245FEF2B0EE89800717E08 /* StepsView.swift in Sources */,
 				63F9377C2AE746BA0075BAC0 /* ContentView.swift in Sources */,
+				63245FEB2B0EE51D00717E08 /* EditArtifactView.swift in Sources */,
+				63720E6B2B7F20AC00E74FA6 /* ModelExtensions.swift in Sources */,
+				63245FED2B0EE81000717E08 /* ArtifactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +621,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		63F937A52AE746F00075BAC0 /* XCLocalSwiftPackageReference "../River" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../River;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63F937A62AE746F00075BAC0 /* RiverKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RiverKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63F9376C2AE746BA0075BAC0 /* Project object */;
 }

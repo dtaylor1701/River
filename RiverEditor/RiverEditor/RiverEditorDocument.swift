@@ -7,33 +7,33 @@
 
 import SwiftUI
 import UniformTypeIdentifiers
+import RiverKit
 
 extension UTType {
-    static var exampleText: UTType {
-        UTType(importedAs: "com.example.plain-text")
+    static var flow: UTType {
+        UTType(importedAs: "com.river.flow")
     }
 }
 
 struct RiverEditorDocument: FileDocument {
-    var text: String
+    var flow: StoredFlow
 
-    init(text: String = "Hello, world!") {
-        self.text = text
+    init(flow: StoredFlow = StoredFlow.exampleFlow()) {
+        self.flow = flow
     }
 
-    static var readableContentTypes: [UTType] { [.exampleText] }
+    static var readableContentTypes: [UTType] { [.flow] }
 
     init(configuration: ReadConfiguration) throws {
-        guard let data = configuration.file.regularFileContents,
-              let string = String(data: data, encoding: .utf8)
-        else {
+        guard let data = configuration.file.regularFileContents else {
             throw CocoaError(.fileReadCorruptFile)
         }
-        text = string
+        let storedFlow = try JSONDecoder().decode(StoredFlow.self, from: data)
+        self.flow = storedFlow
     }
     
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
-        let data = text.data(using: .utf8)!
+        let data = try JSONEncoder().encode(flow)
         return .init(regularFileWithContents: data)
     }
 }
