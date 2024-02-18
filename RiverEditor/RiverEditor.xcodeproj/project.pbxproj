@@ -11,6 +11,19 @@
 		63245FED2B0EE81000717E08 /* ArtifactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63245FEC2B0EE81000717E08 /* ArtifactsView.swift */; };
 		63245FEF2B0EE89800717E08 /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63245FEE2B0EE89800717E08 /* StepsView.swift */; };
 		63720E6B2B7F20AC00E74FA6 /* ModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E6A2B7F20AC00E74FA6 /* ModelExtensions.swift */; };
+		63720E6E2B8065B000E74FA6 /* Goose in Frameworks */ = {isa = PBXBuildFile; productRef = 63720E6D2B8065B000E74FA6 /* Goose */; };
+		63720E702B806A8D00E74FA6 /* EditStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E6F2B806A8D00E74FA6 /* EditStepView.swift */; };
+		63720E722B80747D00E74FA6 /* SelectArtifactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E712B80747D00E74FA6 /* SelectArtifactView.swift */; };
+		63720E752B8077E100E74FA6 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E742B8077E100E74FA6 /* DeleteButton.swift */; };
+		63720E772B807A4A00E74FA6 /* ListButtonContentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E762B807A4A00E74FA6 /* ListButtonContentContainer.swift */; };
+		63720E792B807E6600E74FA6 /* SelectActionTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E782B807E6600E74FA6 /* SelectActionTypeView.swift */; };
+		63720E7B2B81739500E74FA6 /* ArtifactPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E7A2B81739500E74FA6 /* ArtifactPicker.swift */; };
+		63720E7D2B81764900E74FA6 /* AddActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E7C2B81764900E74FA6 /* AddActionView.swift */; };
+		63720E7F2B81B7DC00E74FA6 /* EditActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E7E2B81B7DC00E74FA6 /* EditActionView.swift */; };
+		63720E812B81BD6800E74FA6 /* Identifiable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E802B81BD6800E74FA6 /* Identifiable+Extensions.swift */; };
+		63720E832B81BDA400E74FA6 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E822B81BDA400E74FA6 /* AlertView.swift */; };
+		63720E852B81C1CC00E74FA6 /* SheetContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E842B81C1CC00E74FA6 /* SheetContainer.swift */; };
+		63720E872B81C4CF00E74FA6 /* AddDependencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720E862B81C4CF00E74FA6 /* AddDependencyView.swift */; };
 		63F937782AE746BA0075BAC0 /* RiverEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F937772AE746BA0075BAC0 /* RiverEditorApp.swift */; };
 		63F9377A2AE746BA0075BAC0 /* RiverEditorDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F937792AE746BA0075BAC0 /* RiverEditorDocument.swift */; };
 		63F9377C2AE746BA0075BAC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9377B2AE746BA0075BAC0 /* ContentView.swift */; };
@@ -44,6 +57,18 @@
 		63245FEC2B0EE81000717E08 /* ArtifactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsView.swift; sourceTree = "<group>"; };
 		63245FEE2B0EE89800717E08 /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
 		63720E6A2B7F20AC00E74FA6 /* ModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExtensions.swift; sourceTree = "<group>"; };
+		63720E6F2B806A8D00E74FA6 /* EditStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStepView.swift; sourceTree = "<group>"; };
+		63720E712B80747D00E74FA6 /* SelectArtifactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectArtifactView.swift; sourceTree = "<group>"; };
+		63720E742B8077E100E74FA6 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		63720E762B807A4A00E74FA6 /* ListButtonContentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListButtonContentContainer.swift; sourceTree = "<group>"; };
+		63720E782B807E6600E74FA6 /* SelectActionTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActionTypeView.swift; sourceTree = "<group>"; };
+		63720E7A2B81739500E74FA6 /* ArtifactPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactPicker.swift; sourceTree = "<group>"; };
+		63720E7C2B81764900E74FA6 /* AddActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActionView.swift; sourceTree = "<group>"; };
+		63720E7E2B81B7DC00E74FA6 /* EditActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActionView.swift; sourceTree = "<group>"; };
+		63720E802B81BD6800E74FA6 /* Identifiable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Identifiable+Extensions.swift"; sourceTree = "<group>"; };
+		63720E822B81BDA400E74FA6 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		63720E842B81C1CC00E74FA6 /* SheetContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetContainer.swift; sourceTree = "<group>"; };
+		63720E862B81C4CF00E74FA6 /* AddDependencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDependencyView.swift; sourceTree = "<group>"; };
 		63F937742AE746BA0075BAC0 /* RiverEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiverEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F937772AE746BA0075BAC0 /* RiverEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverEditorApp.swift; sourceTree = "<group>"; };
 		63F937792AE746BA0075BAC0 /* RiverEditorDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverEditorDocument.swift; sourceTree = "<group>"; };
@@ -64,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63720E6E2B8065B000E74FA6 /* Goose in Frameworks */,
 				63F937A72AE746F00075BAC0 /* RiverKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,11 +114,30 @@
 		63245FE92B0EE4DA00717E08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				63245FEA2B0EE51D00717E08 /* EditArtifactView.swift */,
 				63245FEC2B0EE81000717E08 /* ArtifactsView.swift */,
+				63245FEA2B0EE51D00717E08 /* EditArtifactView.swift */,
 				63245FEE2B0EE89800717E08 /* StepsView.swift */,
+				63720E6F2B806A8D00E74FA6 /* EditStepView.swift */,
+				63720E712B80747D00E74FA6 /* SelectArtifactView.swift */,
+				63720E782B807E6600E74FA6 /* SelectActionTypeView.swift */,
+				63720E7A2B81739500E74FA6 /* ArtifactPicker.swift */,
+				63720E7C2B81764900E74FA6 /* AddActionView.swift */,
+				63720E7E2B81B7DC00E74FA6 /* EditActionView.swift */,
+				63720E822B81BDA400E74FA6 /* AlertView.swift */,
+				63720E862B81C4CF00E74FA6 /* AddDependencyView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		63720E732B8077D800E74FA6 /* ToExport */ = {
+			isa = PBXGroup;
+			children = (
+				63720E742B8077E100E74FA6 /* DeleteButton.swift */,
+				63720E762B807A4A00E74FA6 /* ListButtonContentContainer.swift */,
+				63720E802B81BD6800E74FA6 /* Identifiable+Extensions.swift */,
+				63720E842B81C1CC00E74FA6 /* SheetContainer.swift */,
+			);
+			path = ToExport;
 			sourceTree = "<group>";
 		};
 		63F9376B2AE746BA0075BAC0 = {
@@ -118,6 +163,7 @@
 		63F937762AE746BA0075BAC0 /* RiverEditor */ = {
 			isa = PBXGroup;
 			children = (
+				63720E732B8077D800E74FA6 /* ToExport */,
 				63245FE92B0EE4DA00717E08 /* Views */,
 				63F937772AE746BA0075BAC0 /* RiverEditorApp.swift */,
 				63F937792AE746BA0075BAC0 /* RiverEditorDocument.swift */,
@@ -174,6 +220,7 @@
 			name = RiverEditor;
 			packageProductDependencies = (
 				63F937A62AE746F00075BAC0 /* RiverKit */,
+				63720E6D2B8065B000E74FA6 /* Goose */,
 			);
 			productName = RiverEditor;
 			productReference = 63F937742AE746BA0075BAC0 /* RiverEditor.app */;
@@ -223,7 +270,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					63F937732AE746BA0075BAC0 = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -249,6 +296,7 @@
 			mainGroup = 63F9376B2AE746BA0075BAC0;
 			packageReferences = (
 				63F937A52AE746F00075BAC0 /* XCLocalSwiftPackageReference "../River" */,
+				63720E6C2B8065B000E74FA6 /* XCRemoteSwiftPackageReference "Goose" */,
 			);
 			productRefGroup = 63F937752AE746BA0075BAC0 /* Products */;
 			projectDirPath = "";
@@ -292,13 +340,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63720E7B2B81739500E74FA6 /* ArtifactPicker.swift in Sources */,
+				63720E772B807A4A00E74FA6 /* ListButtonContentContainer.swift in Sources */,
 				63F9377A2AE746BA0075BAC0 /* RiverEditorDocument.swift in Sources */,
+				63720E812B81BD6800E74FA6 /* Identifiable+Extensions.swift in Sources */,
 				63F937782AE746BA0075BAC0 /* RiverEditorApp.swift in Sources */,
+				63720E872B81C4CF00E74FA6 /* AddDependencyView.swift in Sources */,
+				63720E722B80747D00E74FA6 /* SelectArtifactView.swift in Sources */,
+				63720E702B806A8D00E74FA6 /* EditStepView.swift in Sources */,
+				63720E752B8077E100E74FA6 /* DeleteButton.swift in Sources */,
 				63245FEF2B0EE89800717E08 /* StepsView.swift in Sources */,
+				63720E7D2B81764900E74FA6 /* AddActionView.swift in Sources */,
 				63F9377C2AE746BA0075BAC0 /* ContentView.swift in Sources */,
+				63720E792B807E6600E74FA6 /* SelectActionTypeView.swift in Sources */,
+				63720E7F2B81B7DC00E74FA6 /* EditActionView.swift in Sources */,
 				63245FEB2B0EE51D00717E08 /* EditArtifactView.swift in Sources */,
 				63720E6B2B7F20AC00E74FA6 /* ModelExtensions.swift in Sources */,
+				63720E852B81C1CC00E74FA6 /* SheetContainer.swift in Sources */,
 				63245FED2B0EE81000717E08 /* ArtifactsView.swift in Sources */,
+				63720E832B81BDA400E74FA6 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +429,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -432,6 +493,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -462,6 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RiverEditor/Preview Content\"";
 				DEVELOPMENT_TEAM = J7826XAREP;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -490,6 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RiverEditor/Preview Content\"";
 				DEVELOPMENT_TEAM = J7826XAREP;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -516,6 +580,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = J7826XAREP;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -535,6 +600,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = J7826XAREP;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -553,6 +619,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = J7826XAREP;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -570,6 +637,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = J7826XAREP;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -629,7 +697,23 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		63720E6C2B8065B000E74FA6 /* XCRemoteSwiftPackageReference "Goose" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dtaylor1701/Goose.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		63720E6D2B8065B000E74FA6 /* Goose */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63720E6C2B8065B000E74FA6 /* XCRemoteSwiftPackageReference "Goose" */;
+			productName = Goose;
+		};
 		63F937A62AE746F00075BAC0 /* RiverKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RiverKit;

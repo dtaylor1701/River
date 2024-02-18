@@ -10,30 +10,31 @@ import SwiftUI
 import RiverKit
 
 struct ArtifactsView: View {
-    @Binding
-    var artifacts: [StoredArtifact]
-    
-    @Binding
-    var selected: StoredArtifact?
-    
-    var body: some View {
-        List {
-            ForEach(artifacts, id: \.fileName) { artifact in
-                Button {
-                    selected = artifact
-                } label: {
-                    ArtifactCard(artifact: artifact)
-
-                }
-            }
+  @Binding
+  var artifacts: [Artifact]
+  
+  @Binding
+  var selected: Artifact?
+  
+  var body: some View {
+    List {
+      ForEach(artifacts) { artifact in
+        Button {
+          selected = artifact
+        } label: {
+          ArtifactCard(artifact: artifact)
+            .asListButtonContent(isSelected: artifact == selected)
         }
+        .buttonStyle(.plain)
+      }
     }
+  }
 }
 
 struct ArtifactCard: View {
-    let artifact: StoredArtifact
-    
-    var body: some View {
-        Text(artifact.fileName)
-    }
+  let artifact: Artifact
+  
+  var body: some View {
+    Text(artifact.fileName)
+  }
 }

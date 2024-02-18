@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct RiverEditorApp: App {
-    var body: some Scene {
-        DocumentGroup(newDocument: RiverEditorDocument()) { file in
-            ContentView(document: file.$document)
-        }
+  var body: some Scene {
+    DocumentGroup(newDocument: RiverEditorDocument()) { file in
+      ContentView(document: file.$document)
     }
+  }
 }
