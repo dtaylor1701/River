@@ -1,6 +1,7 @@
 import Foundation
 import SwiftUI
 import RiverKit
+import BlueJay
 
 struct EditArtifactView: View {
   @Binding
@@ -19,12 +20,7 @@ struct EditArtifactView: View {
     Form {
       TextField("File name", text: $artifact.fileName)
       TextField("Description", text: $artifact.description)
-      Picker("Content Type", selection: $artifact.contentType) {
-        ForEach(contentTypes) { contentType in
-          Text(contentType.displayValue)
-            .tag(contentType)
-        }
-      }
+      ContentTypePicker(contentType: $artifact.contentType)
       DeleteButton(item: artifact, array: $flow.artifacts)
     }
     .formStyle(.grouped)

@@ -1,6 +1,7 @@
 import SwiftUI
 import RiverKit
 import Goose
+import BlueJay
 
 struct EditStepView: View {
   enum Sheet: Identifiable {
@@ -30,23 +31,10 @@ struct EditStepView: View {
   
   var body: some View {
     Form {
-      TextField("Name", text: $step.name)
-      Section("Actions") {
-        AddActionView(flow: flow) { action in
-          step.actions.append(action)
-        }
-        ForEach($step.actions) { action in
-          HStack {
-            EditActionView(action: action, flow: $flow)
-            Spacer()
-            DeleteButton(item: action.wrappedValue, array: $step.actions)
-          }
-        }
+      Section {
+        TextField("Name", text: $step.name)
       }
       Section("Dependencies") {
-        AddDependencyView(flow: flow) { artifactID in
-          step.dependencyIDs.append(artifactID)
-        }
         if let dependencies = try? step.dependencies(in: flow) {
           ForEach(dependencies) { artifact in
             HStack {
@@ -59,6 +47,25 @@ struct EditStepView: View {
           Text("Error loading dependencies.")
         }
       }
+      Section("Add Dependency") {
+        AddDependencyView(step: step, flow: flow) { artifactID in
+          step.dependencyIDs.append(artifactID)
+        }
+      }
+      Section("Actions") {
+        ForEach($step.actions) { action in
+          HStack {
+            EditActionView(action: action, flow: $flow)
+            Spacer()
+            DeleteButton(item: action.wrappedValue, array: $step.actions)
+          }
+        }
+      }
+      Section("Add Action") {
+        AddActionView(flow: flow) { action in
+          step.actions.append(action)
+        }
+      }
       DeleteButton(item: step, array: $flow.steps)
     }
     .formStyle(.grouped)
@@ -69,7 +76,7 @@ struct EditStepView: View {
         SelectArtifactView(artifacts: flow.artifacts) { selected in
           step.dependencyIDs.append(selected.id)
         }
-        .asSheet()
+        .asSheet(configuration: .cancel)
       case .selectActionOutput(let action):
         SelectArtifactView(artifacts: flow.artifacts) { selected in
           guard let stepAction = step.actions.item(with: action.id) else { return }
@@ -85,7 +92,7 @@ struct EditStepView: View {
             step.actions.update(.execute(newAction))
           }
         }        
-        .asSheet()
+        .asSheet(configuration: .cancel)
       }
     }
   }

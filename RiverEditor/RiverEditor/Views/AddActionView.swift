@@ -1,10 +1,3 @@
-//
-//  AddActionView.swift
-//  RiverEditor
-//
-//  Created by David Taylor on 2/17/24.
-//
-
 import Foundation
 import SwiftUI
 import RiverKit
@@ -36,16 +29,21 @@ private struct AddActionViewContent: View {
   var body: some View {
     HStack {
       ActionTypePicker(actionType: $actionType)
-      ArtifactPicker(artifacts: flow.artifacts, artifactID: $artifactID)
+      ArtifactPicker(title: "Output Artifact", artifacts: flow.artifacts, artifactID: $artifactID)
       Button {
         switch actionType {
         case .collect:
-          onAdd(.collect(CollectAction(name: "", outputArtifactID: artifactID)))
+          onAdd(.collect(CollectAction(name: "", description: "", outputArtifactID: artifactID)))
         case .execute:
           onAdd(.execute(ExecuteAction(name: "", executablePath: "", arguments: [], outputArtifactID: artifactID)))
         }
       } label: {
-        Text("Add action")
+        Label {
+          Text("Add")
+        } icon: {
+          Image(systemName: "plus")
+        }
+        .padding(4)
       }
     }
   }

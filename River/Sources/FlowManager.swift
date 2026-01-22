@@ -12,7 +12,7 @@ public class FlowManager {
   let flow: Flow
   let fileManager = FileManager.default
 
-  static let fileName = "flow.river"
+  static let fileName = "river.flow"
 
   public static func create(directory: URL, name: String) throws -> URL {
     // let storedFlow = StoredFlow(name: name, steps: [], artifacts: [])

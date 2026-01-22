@@ -56,6 +56,7 @@ struct EditExecuteAction: View {
       TextField("Name", text: $action.name)
       ArtifactPicker(artifacts: flow.artifacts, artifactID: $action.outputArtifactID)
       TextField("Executable Path", text: $action.executablePath)
+      ArgumentsView(arguments: $action.arguments)
     }
     .onChange(of: action) {
       containingAction = .execute(action)
@@ -63,3 +64,20 @@ struct EditExecuteAction: View {
   }
 }
 
+struct ArgumentsView: View {
+  @Binding
+  var arguments: [String]
+  
+  var body: some View {
+    List {
+      Button {
+        arguments.append("")
+      } label: {
+        Image(systemName: "plus")
+      }
+      ForEach($arguments) { argument in
+        TextField("value", text: argument)
+      }
+    }
+  }
+}

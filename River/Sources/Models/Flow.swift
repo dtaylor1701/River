@@ -25,10 +25,10 @@ extension Flow {
                                         description: "Peanut butter", fileName: "peanut butter", contentType: .text)
     let jamArtifact = Artifact(id: UUID().uuidString, description: "Jam", fileName: "jam", contentType: .text)
     
-    let getBreadAction = CollectAction(id: UUID().uuidString, name: "Get Bread", outputArtifactID: breadArtifact.id)
+    let getBreadAction = CollectAction(id: UUID().uuidString, name: "Get Bread", description: "Get some bread", outputArtifactID: breadArtifact.id)
     let getPeanutButtonAction = CollectAction(id: UUID().uuidString,
-                                              name: "Get Peanut Butter", outputArtifactID: peanutButterArtifact.id)
-    let getJamAction = CollectAction(id: UUID().uuidString, name: "GetJamArtifact", outputArtifactID: jamArtifact.id)
+                                              name: "Get Peanut Butter", description: "Get some peanut butter", outputArtifactID: peanutButterArtifact.id)
+    let getJamAction = CollectAction(id: UUID().uuidString, name: "GetJamArtifact", description: "", outputArtifactID: jamArtifact.id)
     
     let gatherIngredientsStep = Step(
       id: UUID().uuidString,

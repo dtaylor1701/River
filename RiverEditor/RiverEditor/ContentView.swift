@@ -10,12 +10,30 @@ import RiverKit
 import Goose
 
 enum ViewCategory: String, Identifiable, CaseIterable {
+  case artifacts
+  case steps
+  
   var id: String {
     rawValue
   }
   
-  case artifacts
-  case steps
+  var displayValue: String {
+    switch self {
+    case .artifacts:
+      return "Artifacts"
+    case .steps:
+      return "Steps"
+    }
+  }
+}
+
+enum Sheet: String, Identifiable {
+  case newArtifact
+  case newStep
+  
+  var id: String {
+    rawValue
+  }
 }
 
 struct ContentView: View {
@@ -30,14 +48,18 @@ struct ContentView: View {
   @State
   var selectedStep: Step?
   
+  @State
+  var sheet: Sheet?
+  
   var body: some View {
     NavigationSplitView {
       List(ViewCategory.allCases, selection: $selectedCategory) { category in
         Button {
           selectedCategory = category
         } label: {
-          Text(category.rawValue)
+          Text(category.displayValue)
             .asListButtonContent(isSelected: category == selectedCategory)
+            .tag(category)
         }
       }
       .buttonStyle(.plain)
@@ -69,12 +91,26 @@ struct ContentView: View {
         Button {
           switch selectedCategory {
           case .artifacts:
-            document.flow.artifacts.append(Artifact(description: "", fileName: ""))
+            sheet = .newArtifact
           case .steps:
-            document.flow.steps.append(Step(name: "New Step", dependencyIDs: [], actions: []))
+            sheet = .newStep
           }
         } label: {
           Image(systemName: "plus")
+        }
+      }
+    }
+    .sheet(item: $sheet) { selectedSheet in
+      switch selectedSheet {
+      case .newArtifact:
+        NewArtifactView { newArtifact in
+          document.flow.artifacts.append(newArtifact)
+          selectedArtifact = newArtifact
+        }
+      case .newStep:
+        NewStepView { newStep in
+          document.flow.steps.append(newStep)
+          selectedStep = newStep
         }
       }
     }
