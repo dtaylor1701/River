@@ -683,9 +683,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		636CC23E2E7B93E800A54BFA /* XCLocalSwiftPackageReference "../../BlueJay" */ = {
+		636CC23E2E7B93E800A54BFA /* XCLocalSwiftPackageReference "../../../Packages/BlueJay" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../BlueJay;
+			relativePath = ../../../Packages/BlueJay;
 		};
 		63F937A52AE746F00075BAC0 /* XCLocalSwiftPackageReference "../River" */ = {
 			isa = XCLocalSwiftPackageReference;

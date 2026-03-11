@@ -31,5 +31,9 @@ let package = Package(
       resources: [
         .copy("CopyResources")
       ]),
+    .testTarget(
+      name: "RiverKitTests",
+      dependencies: ["RiverKit"],
+      path: "Tests/RiverKitTests"),
   ]
 )
