@@ -41,3 +41,4 @@ yarn.lock
 *.swp
 Thumbs.db
 Desktop.ini
+build/
